@@ -1,13 +1,75 @@
-body {
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  text-decoration: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --main-font: "IBM Plex Sans Condensed", sans-serif;
+  --second-font: "IBM Plex Sans", sans-serif;
+  --background-color: #fffffe;
+  --headline-color: #2b2c34;
+  --button-color: #6246ea;
+  --secondary-color: #a2a2ae;
+  --tertiary-color: #e45858;
 }
+
+body {
+  background-color: var(--background-color) !important;
+  font-family: var(--main-font) !important;
+}
+
+/* Navbar */
+
+.btn-outline-success {
+  padding: 5px 35px !important;
+  background-color: transparent !important;
+  border-color: var(--button-color) !important;
+  color: var(--background-color) !important;
+}
+
+.btn-outline-success:hover {
+  background-color: var(--button-color) !important;
+  color: var(--headline-color) !important;
+  transition: all 0.5s !important;
+}
+
+/* Navbars End */
+
+/* Search */
+/* Search End */
+
+/* Job List */
+
+.job-title {
+  font-size: 20px;
+  margin-top: 20px;
+  color: var(--headline-color) !important;
+}
+
+.job-company {
+  font-size: 14px;
+  color: var(--secondary-color) !important;
+  margin-bottom: 20px;
+}
+
+.job-status {
+  font-weight: bold !important;
+  font-size: 14px;
+  margin-left: -50px;
+  margin-bottom: 20px;
+  color: var(--button-color) !important;
+}
+
+.right-side p {
+  display: flex;
+  flex-direction: column;
+  justify-content: end !important;
+}
+
+/* Job List End */
